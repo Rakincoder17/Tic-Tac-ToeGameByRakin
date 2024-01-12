@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicTacToe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>The Tic-Tac-Toe Game</h1>
+  <div id="msgContainer">
+    <p id="msg"></p>
+    <button id="newGameEnd" onclick="redirect()">New Game</button>
+  </div>
+  <div class="explain">
+    <h2>Instructions</h2>
+    <p>Click in the desired box to mark 'X' or 'O'. 
+         First turn is the turn of 'X'and then 'O' and so on...
+   You can reset, and start a New Game at any time.
+    Enjoy your game :)
+    </p>
+  </div>
+  <div class="container">
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+  </div>
+<div class="buttons">
+  <button id="reset" onclick="refreshPage()">Reset</button>
+  <button id="newGameStart" onclick="redirect()">New Game</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
