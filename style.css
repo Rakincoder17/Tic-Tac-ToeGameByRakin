@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 180, 216);
+  color: rgb(3, 4, 94);
+
+}
+
+h1{
+  font-size: 3rem;
+  align-self: center;
+  
+}
+#msgContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#msg, #newGameEnd{
+  font-size: 3rem;
+  text-align: center;
+  display: none;
+  margin: 2rem;
+  
+}
+#newGameEnd{
+  width: 20rem;
+  font-size: 2rem;
+  background-color: rgb(2, 62, 138);
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  box-shadow: 1.5rem 1.5rem 1.2rem rgba(3, 5, 94, 0.756);
+}
+#newGameEnd:hover{
+  background-color: rgb(5, 33, 67);
+  color: rgb(144, 224, 239);
+}
+#reset ,#newGameStart{
+  width: 20rem;
+  font-size: 2rem;
+  margin: 2rem;
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  box-shadow: 1.5rem 1.5rem 1.2rem rgba(3, 5, 94, 0.756);
+  background-color: rgb(2, 62, 138);
+
+}
+#newGameStart:hover{  
+  background-color: rgb(5, 33, 67);
+
+
+  color: rgb(144, 224, 239);
+}
+#reset:hover{
+  background-color: rgb(5, 33, 67);
+
+  color: rgb(144, 224, 239);
+}
+
+.explain{
+  min-width: 10rem;
+  margin: 1rem 15rem 1rem 15rem;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  align-self: center;
+}
+.explain h2, .explain p{
+  background-color: rgb(2, 62, 138);
+  color: rgb(144, 224, 239);
+}
+.explain h2{
+  border-top: 0.1rem solid black;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.explain p{
+  border-bottom: 0.1rem solid black;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+body{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container{
+  border: 0.3rem solid rgb(9,9,9);
+  border-radius: 0.7rem;
+  position: relative;
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(2, 62, 138);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  /* margin: 2rem; */
+  box-shadow: 1.5rem 1.5rem 1.2rem rgba(3, 5, 94, 0.756);
+}
+.box{
+  border-radius: 0.7rem;
+  background-color: rgb(144, 224, 239);
+  width: 9rem;
+  height: 9rem;
+  margin: 0.5rem;
+  border: 0.3rem solid rgb(9,9,9);
+  font-size: 5rem;
+}
+.buttons{
+  align-self: center;
+}
+
+@media screen and (max-width:520px) {
+  .box{
+    width: 8rem;
+    height: 8rem;
+    margin: 0.4rem;
+  }
+  
+}
+@media screen and (max-width:440px) {
+  .box{
+    width: 6rem;
+    height: 6rem;
+    margin: 0.35rem;
+  }
+  
+}
+@media screen and (max-width:335px) {
+  .box{
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 0.32rem;
+  }
+  .container{
+    position: relative;
+    left: 1rem;
+  }
+  
+}
